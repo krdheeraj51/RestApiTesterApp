@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <h5 class="text-center border" style="">Get 100 Records </h5>
+  <div class="row" *ngIf="allData.length>0">   
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">UserId</th>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+      </tr>
+    </thead>
+    <tbody>   
+    <tr *ngFor="let postData of allData">
+      <td>{{postData.id}}</td>
+      <td>{{postData.userId}}</td>
+      <td>{{postData.title}}</td>
+      <td>{{postData.body}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
